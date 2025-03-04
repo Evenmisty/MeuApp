@@ -7,7 +7,7 @@ using SQLite;
 
 namespace MeuApp.Models
 {
-    class Produto
+    public class Produto
     {
 
         [PrimaryKey, AutoIncrement]
