@@ -8,15 +8,15 @@ namespace MeuApp
 
         public static SQLiteDatabaseHelper Db
         {
-            get 
+            get
             {
                 if (_Db == null)
                 {
                     string path = Path.Combine(
                         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                        "banco_sqlite_compras.db3"); 
-                    
-                    _Db = new SQLiteDatabaseHelper(".... db3"); 
+                        "banco_sqlite_compras.db3");
+
+                    _Db = new SQLiteDatabaseHelper(".... db3");
                 }
 
 
@@ -25,9 +25,9 @@ namespace MeuApp
         }
         public App()
         {
-              InitializeComponent();
-              MainPage = new NavigationPage(new View.ListaProduto());
+            InitializeComponent();
+            MainPage = new NavigationPage(new View.ListaProduto());
         }
-        
+
     }
 }
