@@ -29,5 +29,9 @@ namespace MeuApp
             MainPage = new NavigationPage(new View.ListaProduto());
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
