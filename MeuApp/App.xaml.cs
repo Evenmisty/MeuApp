@@ -1,4 +1,5 @@
 ﻿using MeuApp.Helpers;
+using System.Globalization;
 
 namespace MeuApp
 {
@@ -26,12 +27,11 @@ namespace MeuApp
         public App()
         {
             InitializeComponent();
+
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
+
             MainPage = new NavigationPage(new View.ListaProduto());
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
